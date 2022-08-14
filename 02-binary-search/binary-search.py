@@ -9,32 +9,28 @@ class BinarySearch:
         print("Initializing Components")
         
 # This below function is intended to do a binary search using a recursive approach
-    def binary_search(self,search_list,low_index,high_index,count):
-        count=count+1
+    def binary_search(self,search_list,low_index,high_index):
         search_element_index = -1
         print("low_index :: "+str(low_index)+ " high_index :: "+str(high_index))
-        if high_index >= 1 and count < 5:
-            mid_index =  1 + (high_index - 1) // 2
+        if high_index >= 1:
+            mid_index = (low_index + high_index) // 2
             print("Mid Index :: "+str(mid_index)+" Mid Element :: "+str(str(search_list[mid_index])))
-            if search_list[mid_index] == search_element:    
-                search_element_index=mid_index
+            if search_list[mid_index] == search_element:
+                print("Found the search element at index :: "+str(mid_index))
+                return mid_index
             elif search_element < search_list[mid_index]:
                 print("Element should be searched on the left Half of the list")
-                low_index = low_index
                 high_index = mid_index - 1
                 print("low_index :: "+str(low_index)+ " high_index :: "+str(high_index))
-                self.binary_search(search_list,low_index,high_index,count)
+                self.binary_search(search_list,low_index,high_index)
             elif search_element > search_list[mid_index]:
                 print("Element should be searched on the right side of the list")
                 low_index = mid_index + 1
-                high_index = high_index
                 print("low_index :: "+str(low_index)+ " high_index :: "+str(high_index))
-                self.binary_search(search_list,low_index,high_index,count)
-        else:
-            return search_element_index
+                self.binary_search(search_list,low_index,high_index)
         return search_element_index
     
 binary_search_ins=BinarySearch()
-total_index = len(input_list_sample) - 1
-search_index = binary_search_ins.binary_search(input_list_sample,0,total_index,0)
-print("The searched element :: "+str(search_element)+" is found at the index :: "+str(search_index))
+final_index = len(input_list_sample) - 1
+found_index = binary_search_ins.binary_search(input_list_sample,0,final_index)
+print("The searched element :: "+str(search_element)+" is found at the index :: "+str(found_index))
