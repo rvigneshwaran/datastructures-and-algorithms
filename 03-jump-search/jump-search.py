@@ -32,7 +32,8 @@ class JumpSearch:
                 # restricting the end_index to be the final element in the list
                 if end_index > list_length - 1:
                     end_index = list_length
-            print("Start Index :: "+str(start_index)+" End Index :: "+str(end_index))
+                    break
+                print("Start Index :: "+str(start_index)+" End Index :: "+str(end_index)+" List length :: "+str(list_length))
             return self.linear_search(input_list[start_index:end_index],search_element,start_index)
         else:
             return -1
@@ -44,7 +45,8 @@ class JumpSearch:
             print(str(search_element) + " is not found in the list")
     
 jump_search_ins = JumpSearch()
-search_element_cont = [21,23,43,100,90]
+search_element_cont = [21,23,43,100,90,1]
 for search_element in search_element_cont:
     search_index = jump_search_ins.jump_search(input_list_sample,search_element)
     jump_search_ins.print_result(search_index,search_element)
+    print("--------------------------------------------------------------------------------------------------")
