@@ -1,7 +1,7 @@
 
 search_element=8
 input_list_sample  = [1, 8, 11, 12, 12, 21, 23, 32, 34, 43, 45, 65, 67, 89, 90]
-class BinarySearch:
+class BinarySearchRecursive:
     
     def __init__(self):
         print("Initializing Components")
@@ -29,7 +29,7 @@ class BinarySearch:
         return search_index
             
     
-binary_search_ins=BinarySearch()
+binary_search_ins=BinarySearchRecursive()
 final_index = len(input_list_sample) - 1
 found_index = binary_search_ins.binary_search(input_list_sample,0,final_index)
 if found_index == -1:
