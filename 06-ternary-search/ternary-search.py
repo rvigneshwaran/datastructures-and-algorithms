@@ -42,16 +42,31 @@ class TernarySearch:
         return -1
 
     def print_result(self,result_index,search_element):
-        if result_index is not None:
+        """ The Below method is intended to print the results based on the search index , 
+        if the search index is other than None then the search element is found in the list 
+        else the search element is not in the list
+
+        Args:
+            result_index (String): index of the search element if not found it would be -1
+            search_element (_type_): element which is search on the list.
+        """
+        if result_index is not None or result_index != -1:
             print(str(search_element) + " is found in the list at index :: "+str(result_index))
         else:
             print(str(search_element) + " is not found in the list")
-    
+
+# Instace of the class Ternary Search
 ternary_search_ins = TernarySearch()
+
+# possible list of elements to search from the list
 search_element_cont = [21,23,43,100,90,1]
-for search_element in search_element_cont:
-    start_index = 0
-    end_index = len(input_list_sample) - 1
-    search_index = ternary_search_ins.ternary_search(input_list_sample,start_index,end_index,search_element)
-    ternary_search_ins.print_result(search_index,search_element)
-    print("-----------------------------------------------------")
+
+if search_element_cont is not None and len(search_element_cont) > 0:
+    for search_element in search_element_cont:
+        start_index = 0
+        end_index = len(input_list_sample) - 1
+        search_index = ternary_search_ins.ternary_search(input_list_sample,start_index,end_index,search_element)
+        ternary_search_ins.print_result(search_index,search_element)
+        print("-----------------------------------------------------")
+else:
+    print("There are no elements to search, Kindly provide search elements")
