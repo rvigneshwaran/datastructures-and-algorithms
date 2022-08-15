@@ -29,7 +29,10 @@ args_length = len(sys.argv)
 # Check if the command line has valid arguments
 if args_length == 2:
     nthNumber = int(sys.argv[1])
-    nthNumberResult = fibanocci_instance.calculateNFibanocciNumber(nthNumber)
-    print("The "+str(nthNumber)+"th Fibanacci number is :: "+str(nthNumberResult))
+    if nthNumber > 0:
+        nthNumberResult = fibanocci_instance.calculateNFibanocciNumber(nthNumber)
+        print("The "+str(nthNumber)+"th Fibanacci number is :: "+str(nthNumberResult))
+    else:
+        print("Please enter valid positive Integer")
 else:
     print("Please enter valid arguments for deriving the nth Fibanacci Number")
