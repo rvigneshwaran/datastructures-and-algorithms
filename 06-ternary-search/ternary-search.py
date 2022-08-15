@@ -23,7 +23,11 @@ class TernarySearch:
         if end_index >= start_index:
             mid_index1 = start_index + (end_index - start_index) // 3
             mid_index2 = end_index - (end_index - start_index) // 3
-            print("mid_index1 :: "+str(mid_index1)+" mid_index2 :: "+str(mid_index2))
+            mid_index2Alternative = mid_index1 + (end_index - start_index) // 3
+            # calculating mid differs and the second mid index calculated with the below approach
+            # mid_index2 = mid_index1 + (end_index - start_index) // 3
+            # we can use the either of the approaches to find the second mid point 
+            print("mid_index1 :: "+str(mid_index1)+" mid_index2 :: "+str(mid_index2)+" mid_index2Alternative :: "+str(mid_index2Alternative))
             print("start_index :: "+str(start_index)+" end_index :: "+str(end_index))
             if search_element == input_list[mid_index1]:
                 return mid_index1
