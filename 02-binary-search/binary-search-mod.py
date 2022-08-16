@@ -7,6 +7,18 @@ class BinarySearchMod:
         print("Initializing Components")
         
     def binary_search_mod(self,search_list,low_index,high_index,search_element):
+        """ The below function is intended to perform binary search with less number of comparisions 
+        using the iterative approach , basically a modified version of the binary search in Iterative approach.
+
+        Args:
+            search_list (_type_): _description_
+            low_index (_type_): _description_
+            high_index (_type_): _description_
+            search_element (_type_): _description_
+
+        Returns:
+            _type_: _description_
+        """
         while (high_index - low_index) > 1 :
             mid_index =  low_index + (high_index - low_index) // 2
             print("low_index :: "+str(low_index)+" high_index :: "+str(high_index)+" mid_index :: "+str(mid_index))
