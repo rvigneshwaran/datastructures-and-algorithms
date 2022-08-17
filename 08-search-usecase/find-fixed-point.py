@@ -1,3 +1,5 @@
+import math
+
 input_list_contends = [10, 2, 4, 61, 13, 5, 81]
 print(input_list_contends)
 
@@ -16,6 +18,15 @@ class FindFixedPoint:
                 else:
                     return -1
             return -1
+        
+    
+    def findFixedPointbyApp3(self):
+        if input_list_contends is not None and len(input_list_contends) > 0:
+            list_length = len(input_list_contends)
+            block_size = int(math.sqrt(list_length))
+            start_index = 0
+            end_endex = block_size
+        return -1
     
     def findFixedPointbyApp1(self):
         if(input_list_contends is not None and len(input_list_contends) > 0):
