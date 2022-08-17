@@ -3,7 +3,7 @@ input_list_contends = [1, 2, 4, 6, 3, 7, 8]
 print(input_list_contends)
 
 class MissingNumber:
-    
+        
     def findMissingByApproach1(self,input_list,nElement):
         missing_element = None
         if input_list is not None and len(input_list) > 0 and nElement is not None and nElement > 0:
