@@ -1,7 +1,7 @@
 import sys
 
-input_list_sample = [4, 2, 8, 5, 1, 7, 6, 3]
-target_value = 5
+input_list_sample = [10, 12, 13, 16, 18, 19, 20, 21, 22, 23, 24, 33, 35, 42, 47]
+target_value = 22
 
 """
     The sentinel_linear_search function takes an input_list_sample arr and a target value target as input. 
