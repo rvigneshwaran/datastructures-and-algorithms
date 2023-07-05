@@ -1,5 +1,5 @@
 
-fn bead_sort(mut arr: &mut [u32]) {
+pub fn bead_sort(mut arr: &mut [u32]) {
     // Find the maximum value in the array
     let max = *arr.iter().max().unwrap();
     // Get the length of the array
