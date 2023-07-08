@@ -1,4 +1,4 @@
-# Project Name: Data Structures and Algorithms
+# Data Structures and Algorithms
 
 ## Overview
 This project is a comprehensive implementation of various data structures and algorithms in multiple programming languages. It serves as a valuable resource for anyone interested in learning and practicing essential concepts in computer science.
