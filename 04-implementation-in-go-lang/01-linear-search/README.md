@@ -67,6 +67,8 @@ The character 'Yudhishthira' is found at index 0 in the Mahabharata.
 In this example, the character "Yudhishthira" is found at the beginning of the characters array. The linear search algorithm checks the first element and finds a match. Therefore, the best-case time complexity is O(1), which occurs when the desired element is found at the beginning.
 
 ## Conclusion
+In summary, the linear search algorithm has a time complexity of O(n) in the worst case, as it needs to iterate through all the elements in the array. The best-case time complexity is O(1) when the desired element is found at the beginning.
+
 The linear search algorithm is a simple and straightforward method for searching for an element in an array. However, its time complexity of O(n) makes it less efficient for larger arrays compared to other search algorithms like binary search.
 
 Feel free to modify and use the provided code as a starting point for your own projects.
