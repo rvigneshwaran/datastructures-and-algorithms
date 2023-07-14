@@ -41,7 +41,7 @@ In the implemented code, the Sentinel Linear Search algorithm is applied to sear
 6. The function checks if the target character was found based on the loop termination condition. If found, it returns the index of the target character. Otherwise, it returns -1.
 
 ## Examples
-The program includes multiple examples to demonstrate the linear search algorithm and its time complexity.
+The program includes multiple examples to demonstrate the Sentinel linear search algorithm and its time complexity.
 
 Example 1:
 ```go
